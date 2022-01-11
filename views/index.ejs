@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Receita de Oculos</title>
+</head>
+<body>
+    <div class="container pl-0 pr-0">
+        <div class="card">
+            <div class="card-header">
+                <h3>Receita de Óculos</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/salvarReceita">
+                    <label>Nome do Paciente</label>
+                    <input type="text" placeholder="Paciente" class="form-control" name="paciente">
+
+                    <hr>
+                    <h4>Longe</h4>
+                    <label>OD Esférico</label>
+                    <input type="text" placeholder="OD Esférico" class="form-control" name="odEsfericoLonge">
+                    <br><label>OE Esférico</label>
+                    <input type="text" placeholder="OE Esférico" class="form-control" name="oeEsfericoLonge">
+                    <br><label>OD Cilíndrico</label>
+                    <input type="text" placeholder="OD cilíndrico" class="form-control" name="odCilindricoLonge">
+                    <br><label>OE Cilíndrico</label>
+                    <input type="text" placeholder="OE cilíndrico" class="form-control" name="oeCilindricoLonge">
+                    <br><label>OD Eixo</label>
+                    <input type="text" placeholder="OD Eixo" class="form-control" name="odEixoLonge">
+                    <br><label>OE Eixo</label>
+                    <input type="text" placeholder="OE Eixo" class="form-control" name="oeEixoLonge">
+
+                    <hr>
+                    <h4>Perto</h4>
+                    <label>OD Esférico</label>
+                    <input type="text" placeholder="OD Esférico" class="form-control" name="odEsfericoPerto">
+                    <br><label>OE Esférico</label>
+                    <input type="text" placeholder="OE Esférico" class="form-control" name="oeEsfericoPerto">
+                    <br><label>OD Cilíndrico</label>
+                    <input type="text" placeholder="OD cilíndrico" class="form-control" name="odCilindricoPerto">
+                    <br><label>OE Cilíndrico</label>
+                    <input type="text" placeholder="OE cilíndrico" class="form-control" name="oeCilindricoPerto">
+                    <br><label>OD Eixo</label>
+                    <input type="text" placeholder="OD Eixo" class="form-control" name="odEixoPerto">
+                    <br><label>OE Eixo</label>
+                    <input type="text" placeholder="OE Eixo" class="form-control" name="oeEixoPerto">
+
+                    <hr>    
+                    <label>Observações</label>
+                    <textarea placeholder="Descreva as observações sobre a lente" class="form-control" name="observacoes"></textarea>
+                    <br>
+                    <button class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
